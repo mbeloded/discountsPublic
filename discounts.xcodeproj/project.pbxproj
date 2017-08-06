@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46678BDF1F37A33B00C335EB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46678BDE1F37A33B00C335EB /* DataManager.swift */; };
 		5C0EC99919C82DBA00921CD1 /* CategoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0EC99819C82DBA00921CD1 /* CategoryObject.swift */; };
 		5C0EC99C19C8301400921CD1 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0EC99B19C8301400921CD1 /* CategoryViewController.swift */; };
 		5C0EC99E19C8302600921CD1 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0EC99D19C8302600921CD1 /* CategoryView.swift */; };
@@ -45,6 +46,7 @@
 		23FCDDA70B213D8ED26EF18A /* Pods-discountsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-discountsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-discountsTests/Pods-discountsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E77F361DC9CFCA7BA94E95D /* Pods-discounts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-discounts.release.xcconfig"; path = "Pods/Target Support Files/Pods-discounts/Pods-discounts.release.xcconfig"; sourceTree = "<group>"; };
 		3BC730D4EC26C3706AD40CAC /* Pods-discounts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-discounts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-discounts/Pods-discounts.debug.xcconfig"; sourceTree = "<group>"; };
+		46678BDE1F37A33B00C335EB /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		5C0EC99819C82DBA00921CD1 /* CategoryObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryObject.swift; sourceTree = "<group>"; };
 		5C0EC99B19C8301400921CD1 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		5C0EC99D19C8302600921CD1 /* CategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 			children = (
 				5C0EC9A319C8396500921CD1 /* CategoryManager */,
 				5C8D4B1C19C72B0E00661783 /* DiscountsManager */,
+				46678BDE1F37A33B00C335EB /* DataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -364,7 +367,7 @@
 		5C747D3319C048F200F150F5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Michael Bielodied";
 				TargetAttributes = {
 					5C747D3A19C048F200F150F5 = {
@@ -519,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C8D4B2319C72D4400661783 /* CompanyObject.swift in Sources */,
+				46678BDF1F37A33B00C335EB /* DataManager.swift in Sources */,
 				5C747D7319C04CAC00F150F5 /* DiscountViewController.swift in Sources */,
 				5C0EC9A119C836B500921CD1 /* CategoryViewCell.swift in Sources */,
 				5C8D4B2919C7315800661783 /* DiscountTableViewCell.swift in Sources */,
@@ -586,15 +590,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -629,8 +637,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -638,6 +648,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -647,6 +658,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -705,6 +717,7 @@
 				);
 				INFOPLIST_FILE = discountsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aswellsoft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/discounts.app/discounts";
@@ -723,6 +736,7 @@
 				);
 				INFOPLIST_FILE = discountsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aswellsoft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/discounts.app/discounts";

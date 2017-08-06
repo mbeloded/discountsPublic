@@ -8,13 +8,13 @@
 
 import Foundation
 
-class DiscountsManager {
+class DiscountsManager: DataManager {
    
     static let sharedInstance = DiscountsManager()
     
     var discountsArrayData = Array<CompanyObject>()
     var discountsCategoryArrayData = Array<CompanyObject>()
-
+/*
     func loadJSONFromBundle(_ filename: String) -> [String: AnyObject]? {
         
         if let url = Bundle.main.url(forResource: filename, withExtension: "json")
@@ -33,7 +33,7 @@ class DiscountsManager {
         }
         return nil
     }
-    
+*/
     func loadDataFromJSON(_ filename: String)
     {
         if(discountsArrayData.count > 0)
@@ -45,7 +45,7 @@ class DiscountsManager {
             if let companysArray = dictionary["companys"] as? NSArray {
                 for (_, element) in companysArray.enumerated() {
                     if let element = element as? NSDictionary {
-                        var discount:CompanyObject = CompanyObject()
+                        let discount:CompanyObject = CompanyObject()
                         
                         // we convert each key to a String
                         discount.categoryId = element.value(forKey: "categoryId") as! Int
@@ -70,7 +70,7 @@ class DiscountsManager {
         }
         print("\n array count: \(discountsCategoryArrayData.count) \n")
         for i in 0 ..< discountsArrayData.count {
-           var discount:CompanyObject = discountsArrayData[i]
+           let discount:CompanyObject = discountsArrayData[i]
             if(discount.categoryId == categoryIndex)
             {
                discountsCategoryArrayData.append(discount)

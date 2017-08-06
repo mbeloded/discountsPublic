@@ -8,12 +8,12 @@
 
 import Foundation
 
-class CategoryManager {
+class CategoryManager: DataManager {
     
     static let sharedInstance = CategoryManager()
     
     var categoryArrayData = Array<CategoryObject>()
-    
+    /*
     func loadJSONFromBundle(_ filename: String) -> [String: AnyObject]? {
         
         if let url = Bundle.main.url(forResource: filename, withExtension: "json")
@@ -32,7 +32,7 @@ class CategoryManager {
         }
         return nil
     }
-    
+    */
     func loadDataFromJSON(_ filename: String)
     {
         if let dictionary = self.loadJSONFromBundle(filename)
@@ -40,7 +40,7 @@ class CategoryManager {
             if let categoryArray = dictionary["category"] as? NSArray {
                 for (_, element) in categoryArray.enumerated() {
                     if let element = element as? NSDictionary {
-                        var category:CategoryObject = CategoryObject()
+                        let category:CategoryObject = CategoryObject()
                         
                         // we convert each key to a String
                         category.categoryId = element.value(forKey: "categoryId") as! Int

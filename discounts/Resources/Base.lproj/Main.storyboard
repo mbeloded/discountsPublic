@@ -154,8 +154,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellIdent" rowHeight="172" id="dsj-Bb-eIU" customClass="DiscountTableViewCell" customModule="discounts" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="172"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CellIdent" rowHeight="172" id="dsj-Bb-eIU" customClass="DiscountTableViewCell" customModule="discounts" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="22" width="375" height="172"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dsj-Bb-eIU" id="stb-eC-2Df">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
@@ -219,19 +219,19 @@
                                                     <exclude reference="Pah-3t-7Qi"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <exclude reference="5FB-15-rQ7"/>
+                                                    <exclude reference="W7f-md-dpT"/>
+                                                    <exclude reference="oUj-IC-cVX"/>
                                                     <exclude reference="VBk-rl-Adc"/>
                                                     <exclude reference="YmJ-eX-s9R"/>
                                                     <exclude reference="bN7-Rl-CEg"/>
                                                     <exclude reference="cUh-lI-6B0"/>
                                                     <exclude reference="gM0-Kg-qb9"/>
+                                                    <exclude reference="eB0-pc-J39"/>
+                                                    <exclude reference="jzT-q2-UFq"/>
                                                     <exclude reference="3ju-bJ-EJd"/>
                                                     <exclude reference="crx-I6-gw5"/>
                                                     <exclude reference="uex-iF-rYD"/>
-                                                    <exclude reference="5FB-15-rQ7"/>
-                                                    <exclude reference="W7f-md-dpT"/>
-                                                    <exclude reference="oUj-IC-cVX"/>
-                                                    <exclude reference="eB0-pc-J39"/>
-                                                    <exclude reference="jzT-q2-UFq"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -242,19 +242,19 @@
                                                     <include reference="Pah-3t-7Qi"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <include reference="5FB-15-rQ7"/>
+                                                    <include reference="W7f-md-dpT"/>
+                                                    <include reference="oUj-IC-cVX"/>
                                                     <include reference="VBk-rl-Adc"/>
                                                     <include reference="YmJ-eX-s9R"/>
                                                     <include reference="bN7-Rl-CEg"/>
                                                     <include reference="cUh-lI-6B0"/>
                                                     <include reference="gM0-Kg-qb9"/>
+                                                    <include reference="eB0-pc-J39"/>
+                                                    <include reference="jzT-q2-UFq"/>
                                                     <include reference="3ju-bJ-EJd"/>
                                                     <include reference="crx-I6-gw5"/>
                                                     <include reference="uex-iF-rYD"/>
-                                                    <include reference="5FB-15-rQ7"/>
-                                                    <include reference="W7f-md-dpT"/>
-                                                    <include reference="oUj-IC-cVX"/>
-                                                    <include reference="eB0-pc-J39"/>
-                                                    <include reference="jzT-q2-UFq"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -392,10 +392,10 @@
                                 <exclude reference="YKo-j0-7q3"/>
                                 <exclude reference="cay-tK-dAz"/>
                                 <exclude reference="peF-ID-env"/>
-                                <exclude reference="Uhj-IG-2vH"/>
-                                <exclude reference="wDr-oe-yCv"/>
                                 <exclude reference="6ar-aL-Rr9"/>
                                 <exclude reference="TBt-cv-iKf"/>
+                                <exclude reference="Uhj-IG-2vH"/>
+                                <exclude reference="wDr-oe-yCv"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -407,10 +407,10 @@
                                 <include reference="YKo-j0-7q3"/>
                                 <include reference="cay-tK-dAz"/>
                                 <include reference="peF-ID-env"/>
-                                <include reference="Uhj-IG-2vH"/>
-                                <include reference="wDr-oe-yCv"/>
                                 <include reference="6ar-aL-Rr9"/>
                                 <include reference="TBt-cv-iKf"/>
+                                <include reference="Uhj-IG-2vH"/>
+                                <include reference="wDr-oe-yCv"/>
                             </mask>
                         </variation>
                         <connections>
