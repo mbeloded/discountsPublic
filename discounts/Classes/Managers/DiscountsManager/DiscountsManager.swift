@@ -17,41 +17,46 @@ class DiscountsManager: DataManager {
 
     func loadDataFromJSON(_ filename: String)
     {
-        if(discountsArrayData.count > 0)
-        {
-            return;
+        
+        guard let dictionary = self.loadJSONFromBundle(filename) else {
+            return
         }
-        if let dictionary = self.loadJSONFromBundle(filename)
-        {
-            if let companysArray = dictionary["companys"] as? NSArray {
-                for (_, element) in companysArray.enumerated() {
-                    if let element = element as? NSDictionary {
-                        let discount:CompanyObject = CompanyObject()
-                        
-                        // we convert each key to a String
-                        discount.categoryId = element.value(forKey: "categoryId") as! Int
-                        discount.categoryId = element.value(forKey: "categoryId") as! Int
-                        discount.companyName = element.value(forKey: "companyName") as! String
-                        discount.discount = element.value(forKey: "discount") as! String
-                        discount.imageName = element.value(forKey: "imageName") as! String
-                        discount.discountCode = element.value(forKey: "discountCode") as! String
-                        discountsArrayData.append(discount)
-                    }
-                }
+
+        guard let companysArray = dictionary["companys"] as? NSArray else {
+            return
+        }
+        
+        for (_, element) in companysArray.enumerated() {
+            guard let element = element as? NSDictionary else {
+                return
             }
+            
+            var discount:CompanyObject = CompanyObject()
+            
+            // we convert each key to a String
+            discount.categoryId = element.value(forKey: "categoryId") as! Int
+            discount.categoryId = element.value(forKey: "categoryId") as! Int
+            discount.companyName = element.value(forKey: "companyName") as! String
+            discount.discount = element.value(forKey: "discount") as! String
+            discount.imageName = element.value(forKey: "imageName") as! String
+            discount.discountCode = element.value(forKey: "discountCode") as! String
+            discountsArrayData.append(discount)
         }
     }
     
     func getCompanyWithCategory(_ categoryIndex: Int)
     {
-        if(discountsCategoryArrayData.count > 0)
+        if(!discountsCategoryArrayData.isEmpty)
         {
             discountsCategoryArrayData.removeAll(keepingCapacity: false)
             discountsCategoryArrayData = Array<CompanyObject>()
         }
+        
         print("\n array count: \(discountsCategoryArrayData.count) \n")
-        for i in 0 ..< discountsArrayData.count {
-           let discount:CompanyObject = discountsArrayData[i]
+        
+        //for i in 0 ..< discountsArrayData.count {
+        for (_, discount) in discountsArrayData.enumerated() {
+            
             if(discount.categoryId == categoryIndex)
             {
                discountsCategoryArrayData.append(discount)

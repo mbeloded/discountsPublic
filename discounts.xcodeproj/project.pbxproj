@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461E4C091F391C8B00619FF0 /* CompanyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D4B2219C72D4400661783 /* CompanyObject.swift */; };
 		46678BDF1F37A33B00C335EB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46678BDE1F37A33B00C335EB /* DataManager.swift */; };
-		5C0EC99919C82DBA00921CD1 /* CategoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0EC99819C82DBA00921CD1 /* CategoryObject.swift */; };
+		46FD70811F391D9F00B08B26 /* CategoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0EC99819C82DBA00921CD1 /* CategoryObject.swift */; };
 		5C0EC99C19C8301400921CD1 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0EC99B19C8301400921CD1 /* CategoryViewController.swift */; };
 		5C0EC99E19C8302600921CD1 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0EC99D19C8302600921CD1 /* CategoryView.swift */; };
 		5C0EC9A119C836B500921CD1 /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0EC9A019C836B500921CD1 /* CategoryViewCell.swift */; };
 		5C0EC9A519C8397500921CD1 /* CategoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0EC9A419C8397500921CD1 /* CategoryManager.swift */; };
 		5C0EC9A719C83BF800921CD1 /* Category.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C0EC9A619C83BF800921CD1 /* Category.json */; };
 		5C747D4119C048F200F150F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C747D4019C048F200F150F5 /* AppDelegate.swift */; };
-		5C747D4319C048F200F150F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C747D4219C048F200F150F5 /* ViewController.swift */; };
 		5C747D5719C048F200F150F5 /* discountsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C747D5619C048F200F150F5 /* discountsTests.swift */; };
 		5C747D6B19C04A4500F150F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C747D6619C04A4500F150F5 /* LaunchScreen.xib */; };
 		5C747D6C19C04A4500F150F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C747D6819C04A4500F150F5 /* Main.storyboard */; };
@@ -25,7 +25,6 @@
 		5C747D7319C04CAC00F150F5 /* DiscountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C747D7219C04CAC00F150F5 /* DiscountViewController.swift */; };
 		5C747D7519C04CB600F150F5 /* DiscountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C747D7419C04CB600F150F5 /* DiscountView.swift */; };
 		5C8D4B1E19C72B1F00661783 /* DiscountsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D4B1D19C72B1F00661783 /* DiscountsManager.swift */; };
-		5C8D4B2319C72D4400661783 /* CompanyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D4B2219C72D4400661783 /* CompanyObject.swift */; };
 		5C8D4B2619C72EA300661783 /* Company.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C8D4B2519C72EA300661783 /* Company.json */; };
 		5C8D4B2919C7315800661783 /* DiscountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D4B2819C7315800661783 /* DiscountTableViewCell.swift */; };
 		6772FEC73D8F01CAD3EF3C79 /* Pods_discounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A95384C25BD59AF1963637 /* Pods_discounts.framework */; };
@@ -56,7 +55,6 @@
 		5C747D3B19C048F200F150F5 /* discounts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = discounts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C747D3F19C048F200F150F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C747D4019C048F200F150F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C747D4219C048F200F150F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C747D5019C048F200F150F5 /* discountsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = discountsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C747D5519C048F200F150F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C747D5619C048F200F150F5 /* discountsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = discountsTests.swift; sourceTree = "<group>"; };
@@ -167,7 +165,6 @@
 				5C747D6019C04A4500F150F5 /* Classes */,
 				5C747D6519C04A4500F150F5 /* Resources */,
 				5C747D4019C048F200F150F5 /* AppDelegate.swift */,
-				5C747D4219C048F200F150F5 /* ViewController.swift */,
 				5C747D3E19C048F200F150F5 /* Supporting Files */,
 			);
 			path = discounts;
@@ -521,18 +518,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C8D4B2319C72D4400661783 /* CompanyObject.swift in Sources */,
+				461E4C091F391C8B00619FF0 /* CompanyObject.swift in Sources */,
 				46678BDF1F37A33B00C335EB /* DataManager.swift in Sources */,
 				5C747D7319C04CAC00F150F5 /* DiscountViewController.swift in Sources */,
 				5C0EC9A119C836B500921CD1 /* CategoryViewCell.swift in Sources */,
 				5C8D4B2919C7315800661783 /* DiscountTableViewCell.swift in Sources */,
 				5C747D6F19C04C6900F150F5 /* MainMenuViewController.swift in Sources */,
-				5C747D4319C048F200F150F5 /* ViewController.swift in Sources */,
-				5C0EC99919C82DBA00921CD1 /* CategoryObject.swift in Sources */,
 				5C747D7119C04C9500F150F5 /* MainMenuView.swift in Sources */,
 				5C0EC99C19C8301400921CD1 /* CategoryViewController.swift in Sources */,
 				5C747D4119C048F200F150F5 /* AppDelegate.swift in Sources */,
 				5C0EC9A519C8397500921CD1 /* CategoryManager.swift in Sources */,
+				46FD70811F391D9F00B08B26 /* CategoryObject.swift in Sources */,
 				5C8D4B1E19C72B1F00661783 /* DiscountsManager.swift in Sources */,
 				5C0EC99E19C8302600921CD1 /* CategoryView.swift in Sources */,
 				5C747D7519C04CB600F150F5 /* DiscountView.swift in Sources */,

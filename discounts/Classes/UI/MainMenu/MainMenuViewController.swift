@@ -11,7 +11,7 @@ import UIKit
 
 class MainMenuViewController: UIViewController {
     
-    @IBOutlet var mainMenuView: MainMenuView!
+    @IBOutlet private var mainMenuView: MainMenuView!
     
     var categoryIndex:Int = 0
     

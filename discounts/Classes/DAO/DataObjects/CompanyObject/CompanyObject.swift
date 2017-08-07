@@ -8,11 +8,22 @@
 
 import Foundation
 
-class CompanyObject {
+struct CompanyObject {
+    
     var companyId:Int = 0
     var categoryId:Int = 0
     var companyName:String = ""
     var discount:String = ""
     var imageName:String = ""
     var discountCode:String = ""
+    
+    init() {
+        companyId = 0
+        categoryId = 0
+        companyName = ""
+        discount = ""
+        imageName = ""
+        discountCode = ""
+    }
+ 
 }

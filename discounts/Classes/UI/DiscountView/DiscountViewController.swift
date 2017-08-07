@@ -11,7 +11,7 @@ import UIKit
 
 class DiscountViewController: UIViewController {
     
-    @IBOutlet var discountView: DiscountView!
+    @IBOutlet private var discountView: DiscountView!
     
     var selectedIndex:Int!
     override func viewDidLoad() {

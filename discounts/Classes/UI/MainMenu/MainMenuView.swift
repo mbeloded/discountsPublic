@@ -13,11 +13,10 @@ let cellName = "CellIdent"
 
 class MainMenuView: UIView, UITableViewDataSource, UITableViewDelegate {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak private var tableView: UITableView!
     
     var owner:UIViewController!
     var selectedIndex:Int!
-    
     
     func setupView(_ categoryIndex:Int)
     {

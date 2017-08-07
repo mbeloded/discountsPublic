@@ -13,11 +13,9 @@ import AVFoundation
 
 class DiscountView: UIView {
     
-    @IBOutlet weak var codeImageView: UIImageView!
-    @IBOutlet weak var productImageLogoView: UIImageView!
-    @IBOutlet weak var productNameLabel: UILabel!
-    
-    
+    @IBOutlet weak private var codeImageView: UIImageView!
+    @IBOutlet weak private var productImageLogoView: UIImageView!
+    @IBOutlet weak private var productNameLabel: UILabel!
     
     func generateCode(_ productIndex:Int)
     {

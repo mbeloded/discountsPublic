@@ -8,8 +8,15 @@
 
 import Foundation
 
-class CategoryObject {
-    var categoryId:Int = 0
-    var categoryName:String = ""
-    var categoryImageName:String = ""
+struct CategoryObject {
+    
+    var categoryId:Int
+    var categoryName:String
+    var categoryImageName:String
+    
+    init() {
+        categoryId = 0
+        categoryName = ""
+        categoryImageName = ""
+    }
 }

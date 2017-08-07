@@ -10,7 +10,7 @@ import UIKit
 
 class CategoryViewController: UIViewController {
 
-    @IBOutlet var categoryView: CategoryView!
+    @IBOutlet private var categoryView: CategoryView!
     override func viewDidLoad() {
         super.viewDidLoad()
         categoryView.setupView()

@@ -13,8 +13,8 @@ let cellIdent = "CategoryCell"
 
 class CategoryView: UIView, UICollectionViewDataSource, UICollectionViewDelegate {
 
-    @IBOutlet weak var categoryView: UICollectionView!
-    var owner:UIViewController!
+    @IBOutlet weak private var categoryView: UICollectionView!
+    weak var owner:UIViewController!
     var selectedItem:Int!
     
     /*

@@ -12,11 +12,9 @@ class DiscountTableViewCell: UITableViewCell {
 
     var company:CompanyObject?
     
-    @IBOutlet weak var companyName: UILabel!
-    @IBOutlet weak var companyImageView: UIImageView!
-    @IBOutlet weak var discountLabel: UILabel!
-    
-    
+    @IBOutlet weak private var companyName: UILabel!
+    @IBOutlet weak private var companyImageView: UIImageView!
+    @IBOutlet weak private var discountLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,7 +27,7 @@ class DiscountTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func setupCell() {
-       companyName.text = company?.companyName
+        companyName.text = company?.companyName
         discountLabel.text = company?.discount
         discountLabel.adjustsFontSizeToFitWidth = true
         let fileName:String? = company?.imageName
